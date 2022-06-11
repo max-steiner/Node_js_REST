@@ -1360,3 +1360,117 @@
   label: 'main module',
   timestamp: '2022-06-11T17:05:00.600Z'
 }
+{
+  message: '====== System startup ========',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:03:02.074Z'
+}
+{
+  message: 'The server has been started',
+  level: 'info',
+  label: 'main module',
+  timestamp: '2022-06-11T18:03:03.244Z'
+}
+{
+  message: '====== System startup ========',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:03:57.493Z'
+}
+{
+  message: '====== System startup ========',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:04:03.485Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:04:04.437Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:05:29.671Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:05:46.860Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:05:47.728Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:05:48.274Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:06:41.778Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:06:42.512Z'
+}
+{
+  message: '====== System startup ========',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:15.841Z'
+}
+{
+  message: 'The server has been started',
+  level: 'info',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:16.106Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:23.313Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:31.142Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:34.860Z'
+}
+{
+  message: 'The function get_all_reports has been started.',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:42.261Z'
+}
+{
+  message: 'The function get_report_by_id has been started. ID: 1',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:48.325Z'
+}
+{
+  message: 'The function get_report_by_id has been started. ID: 2',
+  level: 'debug',
+  label: 'main module',
+  timestamp: '2022-06-11T18:08:56.379Z'
+}

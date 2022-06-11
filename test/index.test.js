@@ -2,7 +2,7 @@ const index = require("../index.js");
 const should = require("should");
 const assert = require("assert");
 const expect = require("chai").expect;
-//const axios = require("axios").default;
+const axios = require("axios").default;
 const supertest = require("supertest");
 
 const server = supertest.agent("localhost:3030");

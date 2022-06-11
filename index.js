@@ -8,7 +8,7 @@ const path = require('path')
 logger.debug('====== System startup ========')
 
 
-const port = process.env.port || 3030
+const port = process.env.port || 8080
 
 
 const app = express()
