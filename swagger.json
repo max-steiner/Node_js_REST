@@ -1,164 +1,139 @@
 {
-    "swagger": "2.0",
-    "info": {
-      "version": "1.0.0",
-      "title": "Yet Another Node.js Blogg Application API",
-      "description": "Yet Another Node.js Blogg Application API",
-      "license": {
-        "name": "MIT",
-        "url": "https://opensource.org/licenses/MIT"
-      }
-    },
-    "host": "localhost:8080",
-    "basePath": "/api/v1",
-    "tags": [
-      {
-        "name": "Movies",
-        "description": "API for users in the system"
-      }
-    ],
-    "schemes": [
-      "http"
-    ],
-    "consumes": [
-      "application/json"
-    ],
-    "produces": [
-      "application/json"
-    ],
-    "paths": {
-      "/movies": {
-        "post": {
-          "tags": [
-            "Movies"
-          ],
-          "description": "Create new user in system",
-          "parameters": [
-            {
-              "name": "user",
-              "in": "body",
-              "description": "User that we want to create",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            }
-          ],
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "New user is created",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            }
-          }
-        },
-        "get": {
-          "tags": [
-            "Users"
-          ],
-          "summary": "Get all users in system",
-          "responses": {
-            "200": {
-              "description": "OK",
-              "schema": {
-                "$ref": "#/definitions/Users"
-              }
-            }
-          }
-        }
-      },
-      "/users/{userId}": {
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Node_js_REST",
+    "description": "Max Steiner Project",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "tags": [
+    {
+      "name": "Reports",
+      "description": "API for reports in the system"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/reports": {
+      "post": {
+        "tags": ["Reports"],
+        "description": "Create new report in system",
         "parameters": [
           {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "description": "ID of user that we want to find",
-            "type": "string"
+            "name": "report",
+            "in": "body",
+            "description": "Report that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Report"
+            }
           }
         ],
-        "get": {
-          "tags": [
-            "Users"
-          ],
-          "summary": "Get user with given ID",
-          "responses": {
-            "200": {
-              "description": "User is found",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New report is created",
+            "schema": {
+              "$ref": "#/definitions/Report"
             }
           }
-        },
-        "delete": {
-          "summary": "Delete user with given ID",
-          "tags": [
-            "Users"
-          ],
-          "responses": {
-            "200": {
-              "description": "User is deleted",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            }
-          }
-        },
-        "put": {
-          "summary": "Update user with give ID",
-          "tags": [
-            "Users"
-          ],
-          "parameters": [
-            {
-              "name": "user",
-              "in": "body",
-              "description": "User with new values of properties",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "User is updated",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
+        }
+      },
+      "get": {
+        "tags": ["Reports"],
+        "summary": "Get all reports in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Report"
             }
           }
         }
       }
     },
-    "definitions": {
-      "Movie": {
-        "required": [
-          "title"
-        ],
-        "properties": {
-          "id": {
-            "type": "integer",
-            "uniqueItems": true
-          },
-          "title": {
-            "type": "string",
-            "uniqueItems": true
-          },
-          "price": {
-            "type": "double"
-          },
-          "rating": {
-            "type": "integer"
+    "/reports/{report_id}": {
+      "parameters": [
+        {
+          "name": "report_id",
+          "in": "path",
+          "required": true,
+          "description": "ID of report that we want to find",
+          "type": "integer"
+        }
+      ],
+      "get": {
+        "tags": ["Reports"],
+        "summary": "Get report with given ID",
+        "responses": {
+          "200": {
+            "description": "Report is found",
+            "schema": {
+              "$ref": "#/definitions/Report"
+            }
           }
         }
       },
-      "Users": {
-        "type": "array",
-        "$ref": "#/definitions/User"
+      "delete": {
+        "summary": "Delete report with given ID",
+        "tags": ["Reports"],
+        "responses": {
+          "200": {
+            "description": "Report is deleted",
+            "schema": {
+              "$ref": "#/definitions/Report"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update report with give ID",
+        "tags": ["Reports"],
+        "parameters": [
+          {
+            "name": "report",
+            "in": "body",
+            "description": "Report with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/Report"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Report is updated",
+            "schema": {
+              "$ref": "#/definitions/Report"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Report": {
+      "required": ["id"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "uniqueItems": true
+        },
+        "license_plate": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "driver_id": {
+          "type": "string"
+        },
+        "speed": {
+          "type": "integer"
+        }
       }
     }
   }
+}
